@@ -53,7 +53,7 @@ abstract class ThreadController<T extends Object, X extends Object>
 
   @override
   Future<void> terminateThread() async {
-    _sendPort.send(TerminationMessage());
+    _sendPort.send(const TerminationMessage());
 
     _controller.kill();
     _receivePort.close();

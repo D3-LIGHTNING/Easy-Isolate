@@ -7,4 +7,6 @@ final class InitializationMessage {
   const InitializationMessage(this.sendPort, this.workerThread);
 }
 
-final class TerminationMessage {}
+final class TerminationMessage {
+  const TerminationMessage();
+}
